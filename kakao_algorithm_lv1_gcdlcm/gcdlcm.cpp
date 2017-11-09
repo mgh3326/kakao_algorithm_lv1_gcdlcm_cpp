@@ -30,7 +30,7 @@ vector<int> gcdlcm(int a, int b)
 int main()
 {
 	int a = 3, b = 12;
-	vector<int> testAnswer = gcdlcm(a, b);
+	vector<int> testAnswer = gcdlcm(a, b);//유클리드 호제법 확인
 
 	cout << testAnswer[0] << " " << testAnswer[1];
 	return 0;
