@@ -4,8 +4,27 @@ using namespace std;
 vector<int> gcdlcm(int a, int b)//test
 {
 	vector<int> answer;
+	int z;
+	int x = a;
+	int y = b;
 
-	return answer;
+
+	// 유클리드 호제법
+	while (true) {
+
+		z = x %y;
+		if (0 == z)
+			break;
+
+		x = y;
+		y = z;
+
+	}
+	
+	answer.push_back(y);
+	answer.push_back(a*b/y);
+
+	return answer;//test
 }
 
 int main()
@@ -14,4 +33,5 @@ int main()
 	vector<int> testAnswer = gcdlcm(a, b);
 
 	cout << testAnswer[0] << " " << testAnswer[1];
+	return 0;
 }
