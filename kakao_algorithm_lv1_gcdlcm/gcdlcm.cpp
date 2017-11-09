@@ -1,7 +1,7 @@
 #include<vector>
 #include<iostream>
 using namespace std;
-vector<int> gcdlcm(int a, int b)//test
+vector<int> gcdlcm(int a, int b)
 {
 	vector<int> answer;
 	int z;
@@ -9,7 +9,7 @@ vector<int> gcdlcm(int a, int b)//test
 	int y = b;
 
 
-	// 유클리드 호제법
+	//유클리드 호제법
 	while (true) {
 
 		z = x %y;
@@ -24,7 +24,7 @@ vector<int> gcdlcm(int a, int b)//test
 	answer.push_back(y);
 	answer.push_back(a*b/y);
 
-	return answer;//test
+	return answer;
 }
 
 int main()
